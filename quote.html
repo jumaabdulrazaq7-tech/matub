@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a quote from MATUB Foodstuffs Trading Co LLC. Get customized pricing for vegetables, grains, spices, and dried foods.">
+    <title>Request a Quote | MATUB Foodstuffs Trading Co LLC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpeg" alt="MATUB Foodstuffs Trading Co LLC">
+                </a>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="quote.html" class="nav-link active">Request Quote</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <a href="quote.html" class="btn btn-primary btn-nav">Request a Quote</a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-overlay" id="menuOverlay"></div>
+        <div class="mobile-menu-panel">
+            <button class="menu-close" id="menuClose" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="products.html" class="mobile-nav-link">Products</a>
+                <a href="quote.html" class="mobile-nav-link active">Request Quote</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </nav>
+            <a href="quote.html" class="btn btn-primary btn-mobile">Request a Quote</a>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="label">Get Started</span>
+            <h1>Request a Quote</h1>
+            <p>Tell us what you need. We will reply within 48 hours with pricing, specifications, and shipping options tailored to your requirements.</p>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="section quote-section">
+        <div class="container">
+            <div class="quote-grid">
+                <!-- Form -->
+                <div class="quote-form-wrapper">
+                    <form class="quote-form" id="quoteForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="fullName" placeholder="John Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="companyName">Company Name <span class="required">*</span></label>
+                                <input type="text" id="companyName" name="companyName" placeholder="Your Company Ltd" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="+971 4 834 7442" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="category">Product Category <span class="required">*</span></label>
+                                <select id="category" name="category" required>
+                                    <option value="">Select category</option>
+                                    <option value="vegetables">Vegetables & Fruits</option>
+                                    <option value="grains">Grains, Cereals & Legumes</option>
+                                    <option value="food">Food & Beverages</option>
+                                    <option value="dried">Dried Vegetables & Fruits</option>
+                                    <option value="multiple">Multiple Categories</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="quantity">Quantity Required <span class="required">*</span></label>
+                                <input type="text" id="quantity" name="quantity" placeholder="e.g., 10,000 kg" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination Country <span class="required">*</span></label>
+                            <input type="text" id="destination" name="destination" placeholder="e.g., United Arab Emirates" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Requirements</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us more about your requirements: specific products, quality grades, packaging preferences, delivery timeline, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                                Send Request
+                            </span>
+                            <span class="btn-loading" style="display: none;">
+                                <span class="spinner"></span>
+                                Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="quote-sidebar">
+                    <div class="sidebar-card">
+                        <h3>What Happens Next?</h3>
+                        <ol class="process-list">
+                            <li><span class="step-num">01</span>We review your request within 24 hours</li>
+                            <li><span class="step-num">02</span>Our team prepares a customized quote</li>
+                            <li><span class="step-num">03</span>We contact you with pricing and options</li>
+                            <li><span class="step-num">04</span>Upon agreement, we proceed with sourcing</li>
+                        </ol>
+                    </div>
+                    <div class="sidebar-card sidebar-card-dark">
+                        <h3>Need Immediate Assistance?</h3>
+                        <p>Call or WhatsApp us directly for urgent inquiries.</p>
+                        <a href="tel:+97148347442" class="phone-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                            +971 4 834 7442
+                        </a>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3>Information We Need</h3>
+                        <ul class="info-list">
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Product specifications</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Required quantity</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Delivery location</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Preferred timeline</li>
+                            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>Packaging requirements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="section trust-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="label">Our Promise</span>
+                <h2 class="section-title">Why Request a Quote from MATUB?</h2>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <h3>Fast Response</h3>
+                    <p>Quotes delivered within 48 hours</p>
+                </div>
+                <div class="trust-card">
+                    <h3>Competitive Pricing</h3>
+                    <p>Direct sourcing ensures best rates</p>
+                </div>
+                <div class="trust-card">
+                    <h3>Quality Assured</h3>
+                    <p>Full inspection and documentation</p>
+                </div>
+                <div class="trust-card">
+                    <h3>Flexible Terms</h3>
+                    <p>Customized to your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.jpeg" alt="MATUB Foodstuffs Trading Co LLC">
+                    </a>
+                    <p>Global sourcing. Local precision. Delivered fresh. Your trusted partner for premium agricultural and food products worldwide.</p>
+                    <div class="footer-contact">
+                        <a href="mailto:Sahijonathan@gmail.com" class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>Sahijonathan@gmail.com</span>
+                        </a>
+                        <a href="tel:+97148347442" class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+971 4 834 7442</span>
+                        </a>
+                        <div class="contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Business Bay, Dubai, UAE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="quote.html">Request Quote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">Vegetables & Fruits</a></li>
+                        <li><a href="products.html">Grains & Cereals</a></li>
+                        <li><a href="products.html">Food & Beverages</a></li>
+                        <li><a href="products.html">Dried Foods</a></li>
+                    </ul>
+                </div>
+                <div class="footer-certifications">
+                    <h4>Certifications</h4>
+                    <ul>
+                        <li>HACCP Certified</li>
+                        <li>ISO 22000:2018</li>
+                        <li>GlobalGAP</li>
+                        <li>Phytosanitary Compliance</li>
+                    </ul>
+                    <a href="quote.html" class="btn btn-gold btn-small">Request a Quote</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MATUB Foodstuffs Trading Co LLC. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+97148347442" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Contact us on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-overlay" onclick="closeSuccessModal()"></div>
+        <div class="modal-content modal-content-small">
+            <div class="success-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h3>Request Submitted!</h3>
+            <p>Thank you for your inquiry. Our team will review your request and get back to you within 48 hours with a customized quote.</p>
+            <button class="btn btn-primary" onclick="closeSuccessModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
